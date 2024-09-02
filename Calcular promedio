@@ -1,5 +1,6 @@
 Proceso CalcularPromedio
-    Definir num1, num2, promedio Como Entero
+    Definir num1, num2 Como Entero
+    Definir promedio Como Real
     Escribir "Ingrese el primer número: "
     Leer num1
     Escribir "Ingrese el segundo número: "
