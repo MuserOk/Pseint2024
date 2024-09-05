@@ -1,0 +1,30 @@
+algoritmo entrada_cine
+	definir monto_total como real
+definir tipo_peli, tipo_horario Como Caracter
+Escribir "ingrese el tipo de pelicula que desea ver: A , B o C"
+Leer tipo_peli
+monto_total = 0
+si tipo_peli = "A" Entonces
+	Escribir "Elija un horario: normal o reducido" 
+	Leer tipo_horario
+	si tipo_horario = "normal" Entonces
+		monto_total = 1200
+	sino 
+		monto_total = 1000
+	FinSi
+SiNo
+	si tipo_peli = "B" Entonces
+	Escribir "Elija un horario: normal o reducido" 
+	Leer tipo_horario
+	si tipo_horario = "normal" Entonces
+		monto_total = 1500
+	sino 
+		monto_total = 1300
+	FinSi
+sino 
+	monto_total = 1800
+FinSi
+FinSi
+Escribir "La pelicula seleccionada es la: ", tipo_peli
+Escribir "El monto total a abonar es: ", monto_total
+FinAlgoritmo
