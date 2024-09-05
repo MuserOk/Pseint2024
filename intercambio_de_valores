@@ -1,0 +1,16 @@
+Algoritmo Intercambio_de_valores
+	Definir a, b, aux Como Real
+	a <- 2
+	b <- 2.5
+	Escribir "Los valores antes del intercambio:"
+	Escribir "a = ", a
+	Escribir "b = ", b
+	
+	aux <- a
+	a <- b
+	b <- aux
+	
+	Escribir "Los valores después del intercambio son:"
+	Escribir "a = ", a
+	Escribir "b = ", b
+FinAlgoritmo
