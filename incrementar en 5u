@@ -1,0 +1,8 @@
+Algoritmo ContarDe100a150
+    Definir num Como Entero
+    num <- 100
+    Mientras num <= 150 Hacer
+        Escribir num
+        num <- num + 5
+    FinMientras
+FinAlgoritmo
