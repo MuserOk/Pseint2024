@@ -1,0 +1,47 @@
+Proceso ConversionDeUnidades
+    Definir cantidad, resultado Como Real
+    Definir opcion_de_conversion Como Cadena
+    Definir i Como Entero
+    
+    Escribir "Programa de conversión de unidades"
+    
+    Para i = 1 Hasta 6 Con Paso 1 Hacer
+        Escribir "Conversión ", i, " de 6"
+        Escribir "Ingrese la cantidad a convertir: "
+        Leer cantidad
+        Escribir "Seleccione la unidad de origen y la unidad de destino de entre las siguientes opciones: "
+        Escribir "1. Metros a Kilómetros"
+        Escribir "2. Kilómetros a Metros"
+        Escribir "3. Kilogramos a Gramos"
+        Escribir "4. Gramos a Kilogramos"
+        Escribir "5. Celsius a Fahrenheit"
+        Escribir "6. Fahrenheit a Celsius"
+        Leer opcion_de_conversion
+        
+        Segun opcion_de_conversion Hacer
+            Caso "1":
+                resultado = cantidad / 1000
+                Escribir cantidad, " metros son ", resultado, " kilómetros."
+            Caso "2":
+                resultado = cantidad * 1000
+                Escribir cantidad, " kilómetros son ", resultado, " metros."
+            Caso "3":
+                resultado = cantidad * 1000
+                Escribir cantidad, " kilogramos son ", resultado, " gramos."
+            Caso "4":
+                resultado = cantidad / 1000
+                Escribir cantidad, " gramos son ", resultado, " kilogramos."
+            Caso "5":
+                resultado = (cantidad * 9/5) + 32
+                Escribir cantidad, " grados Celsius son ", resultado, " grados Fahrenheit."
+            Caso "6":
+                resultado = (cantidad - 32) * 5/9
+                Escribir cantidad, " grados Fahrenheit son ", resultado, " grados Celsius."
+            De Otro Modo:
+                Escribir "Opción inválida."
+        Fin Segun
+        
+    Fin Para
+	
+    Escribir "Fin del programa."
+FinProceso
