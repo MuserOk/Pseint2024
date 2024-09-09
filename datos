@@ -1,0 +1,13 @@
+Algoritmo MostrarNombreYAltura
+    Definir nombre Como Cadena
+    Definir altura Como Real
+
+    //Solicitar el nombre completo del usuario y altura 
+    Escribir "Por favor, ingresa tu nombre completo: "
+    Leer nombre
+    Escribir "Por favor, ingresa tu altura en metros: "
+    Leer altura
+
+    // Mostrar el mensaje con los datos ingresados
+    Escribir "Hola ", nombre, ". Tu altura es ", altura, " metros."
+FinAlgoritmo
