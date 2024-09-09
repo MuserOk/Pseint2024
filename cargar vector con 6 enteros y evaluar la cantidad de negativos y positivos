@@ -1,0 +1,27 @@
+Proceso ContarPositivosYNegativos
+    Dimension valores[6]
+    Definir i, positivos, negativos Como Entero
+    positivos = 0
+    negativos = 0
+	
+    // Cargar los 6 números
+    Para i = 0 Hasta 5 Con Paso 1 Hacer
+        Escribir "Ingrese un número entero: "
+        Leer valores[i]
+    FinPara
+	
+    // Evaluar y contar positivos y negativos
+    Para i = 0 Hasta 5 Con Paso 1 Hacer
+        Si valores[i] > 0 Entonces
+            positivos = positivos + 1
+        Sino
+			Si valores[i] < 0 Entonces
+				negativos = negativos + 1
+			FinSi
+        FinSi
+    FinPara
+	
+    // Mostrar resultados
+    Escribir "Cantidad de números positivos: ", positivos
+    Escribir "Cantidad de números negativos: ", negativos
+FinProceso
