@@ -1,0 +1,20 @@
+Proceso Matriz_Diagonal_Secundaria
+    Dimension matriz[6,6]
+
+    Para f <- 0 Hasta 5 Con Paso 1 Hacer
+        Para c <- 0 Hasta 5 Con Paso 1 Hacer
+            matriz[f,c] <- 0
+        FinPara
+    FinPara
+    
+    Para f <- 0 Hasta 5 Con Paso 1 Hacer
+        matriz[f,5-f] <- 1
+    FinPara
+    
+    Para f <- 0 Hasta 5 Con Paso 1 Hacer
+        Para c <- 0 Hasta 5 Con Paso 1 Hacer
+            Escribir Sin Saltar matriz[f,c], " "
+        FinPara
+        Escribir ""
+    FinPara
+FinProceso
