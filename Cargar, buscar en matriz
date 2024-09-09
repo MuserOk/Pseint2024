@@ -1,0 +1,37 @@
+Proceso BuscarFrutaEnMatriz
+    Dimension matriz[4,4]
+    Definir fruta Como Cadena
+    Definir encontrado Como Logico
+    encontrado = Falso
+	
+    // Carga de la matriz de frutas
+    Para i = 0 Hasta 3 Con Paso 1 Hacer
+        Para j = 0 Hasta 3 Con Paso 1 Hacer
+            Escribir "Ingrese el nombre de la fruta: "
+            Leer matriz[i, j]
+        FinPara
+    FinPara
+	
+    // Nombre de fruta a buscar
+    Escribir "Ingrese el nombre de la fruta que desea buscar:"
+    Leer fruta
+	
+    // Buscar la fruta
+    Para i = 0 Hasta 3 Con Paso 1 Hacer
+        Para j = 0 Hasta 3 Con Paso 1 Hacer
+            Si matriz[i, j] = fruta Entonces
+                Escribir "La fruta se encuentra en la fila ", i+1, " y columna ", j+1
+                encontrado = Verdadero
+            FinSi
+        FinPara
+        Si encontrado = Verdadero Entonces
+            i=3
+			j=3
+        FinSi
+    FinPara
+	
+    // Si no se encontró la fruta
+    Si encontrado = Falso Entonces
+        Escribir "La fruta ", fruta, " no se encuentra en la matriz."
+    FinSi
+FinProceso
