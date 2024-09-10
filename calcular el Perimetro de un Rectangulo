@@ -1,0 +1,15 @@
+Algoritmo CalcularPerimetroRectangulo
+    Definir ancho, largo, perimetro Como Real
+	
+    // Solicitar el ancho y el largo del rectángulo al usuario
+    Escribir "Ingrese el ancho del rectángulo: "
+    Leer ancho
+    Escribir "Ingrese el largo del rectángulo: "
+    Leer largo
+	
+    // Calcular el perímetro utilizando la fórmula
+    perimetro = 2 * (ancho + largo)
+	
+    // Mostrar el resultado
+    Escribir "El perímetro del rectángulo es: ", perimetro
+FinAlgoritmo
