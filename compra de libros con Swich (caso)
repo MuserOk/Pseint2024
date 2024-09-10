@@ -1,0 +1,47 @@
+Algoritmo CalcularCostoLibros
+    Definir tipoLibro Como Entero
+    Definir  costoTotal, precioNovela, precioTexto, precioRevista Como Real
+	
+    // Asignamos los precios fijos de los libros
+    precioNovela = 10
+    precioTexto = 20
+    precioRevista = 5
+    costoTotal = 0
+	
+    // Solicitar el tipo de libro seleccionado por el usuario
+    Escribir "Ingrese el número del tipo de libro: "
+    Escribir "1 - Novelas"
+    Escribir "2 - Libros de texto"
+    Escribir "3 - Revistas"
+    Escribir "4 - Novelas y Libros de texto"
+    Escribir "5 - Todos los tipos de libros"
+    Escribir "6 - Novelas y Revistas"
+    Escribir "7 - Libros de texto y Revistas"
+    Leer tipoLibro
+	
+    // Usamos la estructura 'según' para determinar el costo total
+    Según tipoLibro Hacer
+1: // Novelas
+	costoTotal = precioNovela
+2: // Libros de texto
+	costoTotal = precioTexto
+3: // Revistas
+	costoTotal = precioRevista
+4: // Novelas y Libros de texto
+	costoTotal = precioNovela + precioTexto
+5: // Todos los tipos de libros
+	costoTotal = precioNovela + precioTexto + precioRevista
+6: // Novelas y Revistas
+	costoTotal = precioNovela + precioRevista
+7: // Libros de texto y Revistas
+	costoTotal = precioTexto + precioRevista
+//Para el caso de que se ingrese algun valor fuera de las opciones
+De Otro Modo:
+	Escribir "Opción inválida, por favor seleccione un número válido." // Terminar el algoritmo si la opción no es válida
+FinSegún
+
+// Mostrar el costo total al usuario
+Si costoTotal > 0 Entonces
+	Escribir "El costo total de su compra es: $", costoTotal
+FinSi
+FinAlgoritmo
