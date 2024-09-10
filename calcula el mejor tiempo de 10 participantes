@@ -1,0 +1,33 @@
+Algoritmo MenorTiempoCompetencia
+    Definir numParticipante Como Entero
+    Definir menorTiempo, tiempoParticipante Como Real
+    Definir participanteConMenorTiempo Como Entero
+	
+    // Solicitar los datos del primer participante
+    Escribir "Ingrese el número del primer participante: "
+    Leer numParticipante
+    Escribir "Ingrese el tiempo (en minutos) que tardó el participante ", numParticipante, ": "
+    Leer tiempoParticipante
+	
+    // Inicializar el primer tiempo ingresado como el menor tiempo
+    menorTiempo = tiempoParticipante
+    participanteConMenorTiempo = numParticipante
+	
+    // Ciclo para los siguientes 9 participantes (considerando el primero ya evaluado)
+    Para i=2 Hasta 10 Con Paso 1 Hacer
+        Escribir "Ingrese el número del siguiente participante: "
+        Leer numParticipante
+        Escribir "Ingrese el tiempo (en minutos) que tardó el participante ", numParticipante, ": "
+        Leer tiempoParticipante
+		
+        // Verificar si el tiempo ingresado es menor que el menor tiempo registrado hasta ahora
+        Si tiempoParticipante < menorTiempo Entonces
+            menorTiempo = tiempoParticipante
+            participanteConMenorTiempo = numParticipante
+        FinSi
+    FinPara
+	
+    // Mostrar el resultado: el participante con el menor tiempo y su tiempo
+    Escribir "El participante con el menor tiempo es el número ", participanteConMenorTiempo
+    Escribir "Con un tiempo de ", menorTiempo, " minutos."
+FinAlgoritmo
