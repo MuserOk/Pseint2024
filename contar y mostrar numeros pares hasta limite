@@ -1,0 +1,20 @@
+Proceso Contar_Numeros_Pares
+    Definir limite, contador Como Entero
+    contador <- 0  // Inicializamos el contador de números pares
+    
+    // Leer el número límite del usuario
+    Escribir "Ingrese un número límite: "
+    Leer limite
+    
+    // Bucle para contar y mostrar los números pares
+    Para i = 1 Hasta limite Con Paso 1 Hacer
+        Si i % 2 = 0 Entonces  // Si el número es par
+            Escribir i  // Mostramos el número par
+            contador <- contador + 1  // Incrementamos el contador
+        FinSi
+    FinPara
+    
+    // Mostramos cuántos números pares se encontraron
+    Escribir "  Total de números pares encontrados: ", contador
+FinProceso
+
