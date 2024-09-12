@@ -1,0 +1,14 @@
+Proceso Sumar_Hasta_Dos_Cifras
+    Definir numero, suma Como Entero
+    suma <- 0  // Inicializamos la suma en 0
+    
+    // Bucle controlado por centinela
+    Repetir
+        Escribir "Ingrese un número:"
+        Leer numero
+        suma <- suma + numero  // Sumar el número ingresado a la suma
+    Hasta Que numero >= 10 Y numero <= 99  // Condición para detener: número de dos cifras
+    
+    // Mostrar el resultado
+    Escribir "La suma de los números ingresados es: ", suma
+FinProceso
